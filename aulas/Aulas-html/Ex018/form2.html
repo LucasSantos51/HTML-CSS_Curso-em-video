@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <form action="cadastro.php" autocomplete="on">
+
+        <p><label for="nom">Nome </label><input type="text" name="nome" id="nom" required minlength="3" maxlength="20" 
+            size="15" 
+            placeholder="Maria do Socorro" 
+            autocomplete="username"></p>
+
+
+        <p><label for="sen">Senha</label> <input type="password" name="senha" id="sen" required minlength="8" maxlength="20" placeholder=""></p>
+        
+        <p><label for="ima">Email</label> <input type="email" name="imail" id="ima" placeholder="Exemplo@gmail.com" required minlength="10" maxlenght="50"></p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

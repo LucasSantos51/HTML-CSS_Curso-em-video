@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body> <h1>Imagens adaptaveis</h1>
+    <p>As imagens vão mudar de acordo com a resolução do dispositivo</p>
+    <picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">    
+    <img src="imagens/foto-g.png" alt="Imagem"></picture> <!--Codigo para colocar imagens adaptaveis-->
+
+    <h1>Introdução de audios</h1>
+    <audio src="midias/musica.mp3" controls></audio> <br> <p>Musica</p>
+    <audio src="midias/pele.mp3" controls></audio> <p>Áudio do Pelé</p>
+    <audio> 
+        <source srcset="midias/musica.mp3" type="image/">
+    </audio>
+</body>
+</html>

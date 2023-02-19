@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(252, 236, 216, 0.623);
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1#titulo1{
+    text-align: center;
+    color: black;
+    background-color: blanchedalmond;
+}
+
+.basico{
+ color: cornflowerblue;
+}
+.intermediario{
+    color: rgb(0, 105, 0);
+}
+.avancado{
+    color: rgb(194, 0, 39);
+}
+
+.titulo2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+p{  text-align: justify;
+    text-indent: 30px;
+}
