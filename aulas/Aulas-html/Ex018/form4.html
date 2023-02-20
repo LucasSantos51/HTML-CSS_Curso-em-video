@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Informe o telefone e email</h1>
+    <form action="Cadastro.php" method="post" autocomplete>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p><label for="itelefone">Telefone: </label><input type="tel" name="telelefone" id="itelefone" required autocomplete="tel"></p>
+            
+            <p><label for="iemail">Email:</label> <input type="email" name="email" id="iemail" required autocomplete="email"></p>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar tudo">
+    </form>
+</body>
+</html>

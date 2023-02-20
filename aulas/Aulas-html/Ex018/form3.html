@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Realize o cadastro para a consulta médica</h1>
+    <form action="cadastro.php" autocomplete="on">
+
+        <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome" placeholder="José Guilherme" maxlength="30" minlength="2" autocomplete="name" required></p>
+
+        <p><label for="iidade">Idade</label> <input type="number" name="idade" id="iidade" min="18" max="100" autocomplete="cc-number" placeholder="20" required></p>
+
+        <p><label for="inascimento">Data de nascimento</label> <input type="date" name="nascimento" id="inascimento" value="2023-02-19" required></p>
+
+        <p><label for="iemail">Email</label> <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Exemplo@gmail.com" required></p>
+
+        <p><label for="ihorario">Horario da consulta</label> <input type="time" name="horario" id="ihorario" required></p>
+        
+        <input type="submit">
+        <input type="reset" value="Apagar tudo">
+
+    </form>
+</body>
+</html>
