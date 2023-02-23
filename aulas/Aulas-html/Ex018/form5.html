@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body> <h1>Formulário mais completo</h1>
+    <fieldset>
+        <legend>Informações pessoais</legend>
+            <form action="info-pessoais" method="post">
+                <p><label for="inome">Nome completo</label> <input type="text" name="nome" id="inome" autocomplete="name" placeholder="João Marcelo da Silva" maxlength="100" minlength="5" required></p>
+                <p><label for="iidade">Data de nascimento</label> <input type="date" name="idade" id="iidade" required></p>
+                <p>Sexo 
+                    <input type="radio" name="sexo" id="imas" value="M"> <label for="imas">Masculino</label> 
+                    
+                    <input type="radio" name="sexo" id="ifam" value="F">  <label for="ifam">Feminino</label></p>
+
+                <p><label for="iemail">Email</label> <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Exemplo@gmail.com" required></p>
+                <p><label for="itelefone">telefone</label> <input type="tel" name="telefone" id="itelefone" placeholder="(xx) xxxx-xxxx" pattern="^\(\e{2}\)\d{4,5}-\d{4}$" required maxlength="14"></p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <p><label for="ifut">Futebol</label> <input type="checkbox" name="fut" id="ifut" checked></p>
+            <p><label for="ibas">Basquete</label> <input type="checkbox" name="bas" id="ibas" checked></p>
+            <p><label for="ivol">Vôlei</label> <input type="checkbox" name="vol" id="ivol"></p>
+            <p><label for="iten">Tênis</label> <input type="checkbox" name="ten" id="iten"></p>
+            <p><label for="iout">Outro</label> <input type="text" name="out" id="iout" minlength="3" maxlength="20" placeholder="Ex: Skate"></p>
+        </fieldset>
+    
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar tudo">
+        </p>
+    </form>
+</body>
+</html>
